@@ -1,4 +1,11 @@
-const Container = (props: { title: string; children: React.ReactElement }) => {
+import React from "react";
+
+type ContainerProps = {
+  title: string;
+  children: React.ReactNode;
+};
+
+const Container = (props: ContainerProps) => {
   const { title, children } = props;
   return (
     <div>
