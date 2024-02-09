@@ -3,7 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 // import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { Input } from "./components/customHookSample";
+// import { Input } from "./components/customHookSample";
+// import Form from "./components/Form/useState/index";
+// import Form from "./components/Form/useForm/index";
+import HookForm from "./components/Form/Chakra";
 // import { ImageUploader } from "./components/useRefSample";
 // import Parent from "./components/useContextSample";
 // import { Clock } from "./components/Clock";
@@ -15,13 +18,18 @@ import { Input } from "./components/customHookSample";
 // import Message from "./components/Message";
 // import Parent from "./components/ContainerSample";
 // import { UseMemoSample } from "./components/useMemoSample";
+import { ChakraProvider, Box } from "@chakra-ui/react";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Input />
+    <ChakraProvider>
+      <Box p={4}>
+        <HookForm />
+      </Box>
+    </ChakraProvider>
   </React.StrictMode>
 );
 
