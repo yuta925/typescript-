@@ -19,17 +19,19 @@ import HookForm from "./components/Form/Chakra";
 // import Parent from "./components/ContainerSample";
 // import { UseMemoSample } from "./components/useMemoSample";
 import { ChakraProvider, Box } from "@chakra-ui/react";
+import App from "./App";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <ChakraProvider>
+    <App />
+    {/* <ChakraProvider>
       <Box p={4}>
         <HookForm />
       </Box>
-    </ChakraProvider>
+    </ChakraProvider> */}
   </React.StrictMode>
 );
 
