@@ -22,6 +22,7 @@ import { ChakraProvider, Box } from "@chakra-ui/react";
 import App from "./App";
 import MultipleSelectCheckmarks from "./components/SelectBox";
 import Icon from "./components/Icons";
+import TextField2 from "./components/TextField";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -30,6 +31,7 @@ root.render(
   <React.StrictMode>
     <MultipleSelectCheckmarks />
     <Icon />
+    <TextField2 />
   </React.StrictMode>
 );
 
