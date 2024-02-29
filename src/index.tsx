@@ -21,18 +21,15 @@ import HookForm from "./components/Form/Chakra";
 import { ChakraProvider, Box } from "@chakra-ui/react";
 import App from "./App";
 import MultipleSelectCheckmarks from "./components/SelectBox";
+import Icon from "./components/Icons";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    {/* <ChakraProvider>
-      <Box p={4}>
-        <HookForm />
-      </Box>
-    </ChakraProvider> */}
     <MultipleSelectCheckmarks />
+    <Icon />
   </React.StrictMode>
 );
 

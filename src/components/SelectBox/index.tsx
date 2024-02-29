@@ -41,8 +41,8 @@ const MultipleSelectCheckmarks: FC = () => {
 
   return (
     <div className="p-32">
-      <FormControl sx={{ m: 1, width: 300 }}>
-        <InputLabel id="demo-multiple-checkbox-label">
+      <FormControl sx={{ m: 1, width: 500 }}>
+        <InputLabel id="demo-multiple-checkbox-label" color="success">
           アーティスト名
         </InputLabel>
         <Select
@@ -57,7 +57,7 @@ const MultipleSelectCheckmarks: FC = () => {
         >
           {names.map((name) => (
             <MenuItem key={name} value={name}>
-              <Checkbox checked={artistName.indexOf(name) > -1} />
+              <Checkbox checked={artistName.indexOf(name) > -1} disabled />
               <ListItemText primary={name} />
             </MenuItem>
           ))}
