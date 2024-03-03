@@ -4,6 +4,7 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import SearchSelectBox from "./components/SearchSelectBox";
 import SearchMultiSelectBox from "./components/SearchMultiSelectBox";
+import Artisttest from "./feature/ArtistInfo";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -12,6 +13,7 @@ root.render(
   <React.StrictMode>
     <SearchSelectBox />
     <SearchMultiSelectBox />
+    <Artisttest />
   </React.StrictMode>
 );
 
