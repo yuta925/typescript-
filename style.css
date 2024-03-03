@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  height: 100vh;
+  margin: 0;
+}
+
+.element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  border-radius: 100%;
+}
+
+.fuwafuwa01 {
+  animation: fuwafuwa01 2s infinite ease-in-out;
+}
+
+.fuwafuwa02 {
+  animation: fuwafuwa02 5s infinite ease-in-out;
+}
+
+.fuwafuwa03 {
+  animation: fuwafuwa03 1s infinite ease-in-out;
+}
+
+@keyframes fuwafuwa01 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+@keyframes fuwafuwa02 {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+}
+
+@keyframes fuwafuwa03 {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+}
+
