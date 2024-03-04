@@ -5,15 +5,19 @@ import reportWebVitals from "./reportWebVitals";
 import SearchSelectBox from "./components/SearchSelectBox";
 import SearchMultiSelectBox from "./components/SearchMultiSelectBox";
 import Artisttest from "./feature/ArtistInfo";
+import Test from "./components/test";
+import Photo from "./components/UploadPhoto";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <SearchSelectBox />
+    {/* <SearchSelectBox />
     <SearchMultiSelectBox />
-    <Artisttest />
+    <Artisttest /> */}
+    {/* <Test /> */}
+    <Photo />
   </React.StrictMode>
 );
 
