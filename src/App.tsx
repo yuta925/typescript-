@@ -5,6 +5,7 @@ import { Page2 } from "./pages/Page2";
 import { Page1Detail1 } from "./pages/Page1Detail1";
 import { Page1Detail2 } from "./pages/Page1Detail2";
 import { UrlParameter } from "./components/UrlParameter/UrlParameter";
+import { QueryParameter } from "./components/QueryParameter/QueryParameter";
 
 export const App = () => {
   return (
@@ -25,6 +26,7 @@ export const App = () => {
         <Route path="/page2">
           <Route index={true} element={<Page2 />} />
           <Route path=":id" element={<UrlParameter />} />
+          <Route path="/page2/query" element={<QueryParameter />} />
         </Route>
       </Routes>
     </>
