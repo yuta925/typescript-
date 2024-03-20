@@ -6,6 +6,7 @@ import { Page1Detail1 } from "./pages/Page1Detail1";
 import { Page1Detail2 } from "./pages/Page1Detail2";
 import { UrlParameter } from "./components/UrlParameter/UrlParameter";
 import { QueryParameter } from "./components/QueryParameter/QueryParameter";
+import { NotFound } from "./components/NotFound/NotFound";
 
 export const App = () => {
   return (
@@ -17,6 +18,7 @@ export const App = () => {
       <Link to="page2">PAGE2</Link>
 
       <Routes>
+        <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="/page1">
           <Route index={true} element={<Page1 />} />
