@@ -4,6 +4,7 @@ import { Page1 } from "./pages/Page1";
 import { Page2 } from "./pages/Page2";
 import { Page1Detail1 } from "./pages/Page1Detail1";
 import { Page1Detail2 } from "./pages/Page1Detail2";
+import { UrlParameter } from "./components/UrlParameter/UrlParameter";
 
 export const App = () => {
   return (
@@ -16,12 +17,15 @@ export const App = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/page1" element={<Page1 />}>
+        <Route path="/page1">
           <Route index={true} element={<Page1 />} />
           <Route path="/page1/detail1" element={<Page1Detail1 />} />
           <Route path="/page1/detail2" element={<Page1Detail2 />} />
         </Route>
-        <Route path="/page2" element={<Page2 />} />
+        <Route path="/page2">
+          <Route index={true} element={<Page2 />} />
+          <Route path=":id" element={<UrlParameter />} />
+        </Route>
       </Routes>
     </>
   );
